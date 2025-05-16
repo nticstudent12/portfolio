@@ -1,7 +1,9 @@
 
 import { useState } from "react";
 import SectionTitle from "../SectionTitle";
-import { Github, ExternalLink } from "lucide-react";
+import { Github, ExternalLink, Eye } from "lucide-react";
+import { Button } from "../ui/button";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../ui/tooltip";
 
 type Project = {
   title: string;
@@ -22,7 +24,9 @@ const ProjectsSection = () => {
       image: "school-management",
       technologies: ["Next.js", "React.js", "Tailwind CSS"],
       year: 2025,
-      teamProject: true
+      teamProject: true,
+      githubUrl: "https://github.com/abdeldjalil/school-management",
+      liveUrl: "https://school-management-demo.vercel.app"
     },
     {
       title: "Car Sales Website",
@@ -30,7 +34,8 @@ const ProjectsSection = () => {
       image: "car-sales",
       technologies: ["HTML", "CSS", "JavaScript"],
       year: 2024,
-      teamProject: false
+      teamProject: false,
+      githubUrl: "https://github.com/abdeldjalil/car-sales"
     },
     {
       title: "Tic-Tac-Toe Game",
@@ -38,7 +43,9 @@ const ProjectsSection = () => {
       image: "tic-tac-toe",
       technologies: ["React.js", "CSS"],
       year: 2023,
-      teamProject: false
+      teamProject: false,
+      githubUrl: "https://github.com/abdeldjalil/tic-tac-toe",
+      liveUrl: "https://tic-tac-toe-game-abdeldjalil.vercel.app"
     },
     {
       title: "To-Do List Application",
@@ -46,7 +53,8 @@ const ProjectsSection = () => {
       image: "todo-list",
       technologies: ["JavaScript", "HTML", "CSS"],
       year: 2023,
-      teamProject: false
+      teamProject: false,
+      githubUrl: "https://github.com/abdeldjalil/todo-app"
     },
     {
       title: "Typing Game",
@@ -54,7 +62,9 @@ const ProjectsSection = () => {
       image: "typing-game",
       technologies: ["React.js", "CSS"],
       year: 2024,
-      teamProject: false
+      teamProject: false,
+      githubUrl: "https://github.com/abdeldjalil/typing-game",
+      liveUrl: "https://typing-game-abdeldjalil.vercel.app"
     }
   ];
 
@@ -101,28 +111,47 @@ const ProjectsSection = () => {
                 </span>
                 
                 <div className="flex gap-2">
-                  {project.githubUrl && (
-                    <a 
-                      href={project.githubUrl}
-                      className="p-2 rounded-full hover:bg-secondary transition-colors"
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      aria-label="GitHub Repository"
-                    >
-                      <Github className="h-5 w-5" />
-                    </a>
-                  )}
-                  {project.liveUrl && (
-                    <a 
-                      href={project.liveUrl}
-                      className="p-2 rounded-full hover:bg-secondary transition-colors"
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      aria-label="Live Demo"
-                    >
-                      <ExternalLink className="h-5 w-5" />
-                    </a>
-                  )}
+                  <TooltipProvider>
+                    {project.githubUrl && (
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            className="rounded-full hover:bg-portfolio-blue-light hover:text-white transition-all"
+                            onClick={() => window.open(project.githubUrl, "_blank", "noopener,noreferrer")}
+                            aria-label="View Source Code on GitHub"
+                          >
+                            <Github className="h-4 w-4 mr-1" />
+                            <span className="hidden sm:inline-block">Source</span>
+                          </Button>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>View Source Code</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    )}
+                    
+                    {project.liveUrl && (
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <Button
+                            variant="default"
+                            size="sm"
+                            className="rounded-full bg-portfolio-blue-light hover:bg-portfolio-blue-dark transition-all"
+                            onClick={() => window.open(project.liveUrl, "_blank", "noopener,noreferrer")}
+                            aria-label="View Live Demo"
+                          >
+                            <Eye className="h-4 w-4 mr-1" />
+                            <span className="hidden sm:inline-block">Live Demo</span>
+                          </Button>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>View Live Demo</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    )}
+                  </TooltipProvider>
                 </div>
               </div>
             </div>
