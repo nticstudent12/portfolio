@@ -25,7 +25,7 @@ const ProjectsSection = () => {
       technologies: ["Next.js", "React.js", "Tailwind CSS"],
       year: 2025,
       teamProject: true,
-      githubUrl: "https://github.com/abdeldjalil/school-management",
+      githubUrl: "https://github.com/nihadben1/dawproject",
       liveUrl: "https://school-management-demo.vercel.app"
     },
     {
