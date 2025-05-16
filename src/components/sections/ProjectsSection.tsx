@@ -35,7 +35,7 @@ const ProjectsSection = () => {
       technologies: ["HTML", "CSS", "JavaScript"],
       year: 2024,
       teamProject: false,
-      githubUrl: "https://github.com/abdeldjalil/car-sales"
+      githubUrl: "https://github.com/nticstudent12/carProject"
     },
     {
       title: "Tic-Tac-Toe Game",
@@ -44,7 +44,7 @@ const ProjectsSection = () => {
       technologies: ["React.js", "CSS"],
       year: 2023,
       teamProject: false,
-      githubUrl: "https://github.com/abdeldjalil/tic-tac-toe",
+      githubUrl: "https://github.com/nticstudent12/tic-tac-toe",
       liveUrl: "https://tic-tac-toe-game-abdeldjalil.vercel.app"
     },
     {
@@ -54,7 +54,7 @@ const ProjectsSection = () => {
       technologies: ["JavaScript", "HTML", "CSS"],
       year: 2023,
       teamProject: false,
-      githubUrl: "https://github.com/abdeldjalil/todo-app"
+      githubUrl: "https://github.com/nticstudent12/to-do-app"
     },
     {
       title: "Typing Game",
@@ -63,7 +63,7 @@ const ProjectsSection = () => {
       technologies: ["React.js", "CSS"],
       year: 2024,
       teamProject: false,
-      githubUrl: "https://github.com/abdeldjalil/typing-game",
+      githubUrl: "https://github.com/nticstudent12/typingSpeddapp",
       liveUrl: "https://typing-game-abdeldjalil.vercel.app"
     }
   ];
