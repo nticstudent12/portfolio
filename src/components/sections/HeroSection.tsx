@@ -35,7 +35,7 @@ const HeroSection = () => {
           </div>
         </div>
         
-        <div className="order-first md:order-last flex justify-center animate-fade-in-right">
+        <div className="order-first md:order-last hidden md:flex justify-center animate-fade-in-right">
           <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-2 border-portfolio-blue-light/30">
             <img 
               src="/lovable-uploads/2afb2774-f9fc-40df-b367-661b4e8ee850.png" 
