@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import SectionTitle from "../SectionTitle";
 import { Github, ExternalLink, Eye } from "lucide-react";
