@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import SectionTitle from "../SectionTitle";
 import { Github, ExternalLink, Eye } from "lucide-react";
@@ -204,55 +203,67 @@ const ProjectsSection = () => {
           description="Screenshots from the Car Sales Website project showcasing different features."
         />
         <div className="mt-8">
-          <Carousel>
-            <CarouselContent>
-              <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
-                <img 
-                  src="/lovable-uploads/65d4144b-7bcd-4392-b4dc-01f53bd738da.png" 
-                  alt="Car Sales Homepage" 
-                  className="w-full h-auto rounded-lg shadow-md"
-                />
-                <p className="text-center mt-2 text-sm text-muted-foreground">Homepage - Find Your Best Car</p>
+          <Carousel className="w-full">
+            <CarouselContent className="-ml-2 md:-ml-4">
+              <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg bg-gray-50">
+                  <img 
+                    src="/lovable-uploads/65d4144b-7bcd-4392-b4dc-01f53bd738da.png" 
+                    alt="Car Sales Homepage" 
+                    className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <p className="text-center mt-3 text-sm text-muted-foreground font-medium">Homepage - Find Your Best Car</p>
               </CarouselItem>
-              <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
-                <img 
-                  src="/lovable-uploads/3b031d17-d9b7-4d14-9c3f-603ce0b594f0.png" 
-                  alt="Login Options" 
-                  className="w-full h-auto rounded-lg shadow-md"
-                />
-                <p className="text-center mt-2 text-sm text-muted-foreground">User Role Selection</p>
+              <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg bg-gray-50">
+                  <img 
+                    src="/lovable-uploads/3b031d17-d9b7-4d14-9c3f-603ce0b594f0.png" 
+                    alt="Login Options" 
+                    className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <p className="text-center mt-3 text-sm text-muted-foreground font-medium">User Role Selection</p>
               </CarouselItem>
-              <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
-                <img 
-                  src="/lovable-uploads/efae1470-4e95-4395-ad61-129a340c782f.png" 
-                  alt="Login Form" 
-                  className="w-full h-auto rounded-lg shadow-md"
-                />
-                <p className="text-center mt-2 text-sm text-muted-foreground">Sign In Form</p>
+              <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg bg-gray-50">
+                  <img 
+                    src="/lovable-uploads/efae1470-4e95-4395-ad61-129a340c782f.png" 
+                    alt="Login Form" 
+                    className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <p className="text-center mt-3 text-sm text-muted-foreground font-medium">Sign In Form</p>
               </CarouselItem>
-              <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
-                <img 
-                  src="/lovable-uploads/5b44d26a-2ac7-47d8-a2ce-0b4089f65896.png" 
-                  alt="OTP Verification" 
-                  className="w-full h-auto rounded-lg shadow-md"
-                />
-                <p className="text-center mt-2 text-sm text-muted-foreground">OTP Verification</p>
+              <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg bg-gray-50">
+                  <img 
+                    src="/lovable-uploads/5b44d26a-2ac7-47d8-a2ce-0b4089f65896.png" 
+                    alt="OTP Verification" 
+                    className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <p className="text-center mt-3 text-sm text-muted-foreground font-medium">OTP Verification</p>
               </CarouselItem>
-              <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
-                <img 
-                  src="/lovable-uploads/87c06e4b-329c-4c2d-afb3-c6987c8c517a.png" 
-                  alt="Admin Dashboard" 
-                  className="w-full h-auto rounded-lg shadow-md"
-                />
-                <p className="text-center mt-2 text-sm text-muted-foreground">Admin Dashboard</p>
+              <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg bg-gray-50">
+                  <img 
+                    src="/lovable-uploads/87c06e4b-329c-4c2d-afb3-c6987c8c517a.png" 
+                    alt="Admin Dashboard" 
+                    className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <p className="text-center mt-3 text-sm text-muted-foreground font-medium">Admin Dashboard</p>
               </CarouselItem>
-              <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
-                <img 
-                  src="/lovable-uploads/0fc037c6-0d6f-426c-811a-ba8f95902e88.png" 
-                  alt="Contact Form" 
-                  className="w-full h-auto rounded-lg shadow-md"
-                />
-                <p className="text-center mt-2 text-sm text-muted-foreground">Contact Car Owner Form</p>
+              <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg bg-gray-50">
+                  <img 
+                    src="/lovable-uploads/0fc037c6-0d6f-426c-811a-ba8f95902e88.png" 
+                    alt="Contact Form" 
+                    className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <p className="text-center mt-3 text-sm text-muted-foreground font-medium">Contact Car Owner Form</p>
               </CarouselItem>
             </CarouselContent>
             <CarouselPrevious className="-left-4 md:-left-6" />
