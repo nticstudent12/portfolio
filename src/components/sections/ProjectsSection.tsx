@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import SectionTitle from "../SectionTitle";
 import { Github, ExternalLink, Eye } from "lucide-react";
@@ -43,7 +42,8 @@ const ProjectsSection = () => {
       technologies: ["JavaScript", "HTML", "CSS"],
       year: 2023,
       teamProject: false,
-      githubUrl: "https://github.com/nticstudent12/to-do-app"
+      githubUrl: "https://github.com/nticstudent12/to-do-app",
+      liveUrl: "https://nticstudent12.github.io/to-do-app/"
     },
     {
       title: "Speed Typing Game",
@@ -73,7 +73,7 @@ const ProjectsSection = () => {
       year: 2023,
       teamProject: false,
       githubUrl: "https://github.com/nticstudent12/tic-tac-toe",
-      liveUrl: "https://tic-tac-toe-game-abdeldjalil.vercel.app"
+      liveUrl: "https://nticstudent12.github.io/tic-tac-toe/"
     },
     {
       title: "تطبيق الصلاة",
