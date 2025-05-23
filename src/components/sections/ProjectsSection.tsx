@@ -102,15 +102,6 @@ const ProjectsSection = () => {
       githubUrl: "https://github.com/nticstudent12/healthtrustapp",
       liveUrl: "https://healthtrust-demo.vercel.app"
     },
-    {
-      title: "AI Medical Scanner",
-      description: "An AI-powered application for analyzing medical scans and images to assist healthcare professionals in diagnosis.",
-      image: "/lovable-uploads/b86c840f-2e44-43ac-bdf1-965d7afb4a37.png",
-      technologies: ["Python", "TensorFlow", "React.js"],
-      year: 2025,
-      teamProject: true,
-      githubUrl: "https://github.com/nticstudent12/ai-medical-scanner"
-    },
   ];
 
   // Group projects into rows of 3 for larger screens
