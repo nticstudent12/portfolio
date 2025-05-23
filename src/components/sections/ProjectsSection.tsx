@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import SectionTitle from "../SectionTitle";
 import { Github, ExternalLink, Eye } from "lucide-react";
@@ -77,7 +78,7 @@ const ProjectsSection = () => {
     {
       title: "تطبيق الصلاة",
       description: "Prayer Times application with Qibla direction, Quran recitations, and Islamic calendar.",
-      image: "prayer-app",
+      image: "/lovable-uploads/13874a1a-ec3c-4f63-96fe-d50c3660828b.png",
       technologies: ["React Native", "API Integration"],
       year: 2024,
       teamProject: false,
@@ -86,7 +87,7 @@ const ProjectsSection = () => {
     {
       title: "Car Sales Website",
       description: "A platform for buying and selling cars with search filters, user authentication, and messaging capabilities.",
-      image: "car-sales",
+      image: "/lovable-uploads/65d4144b-7bcd-4392-b4dc-01f53bd738da.png",
       technologies: ["HTML", "CSS", "JavaScript"],
       year: 2024,
       teamProject: false,
@@ -188,6 +189,70 @@ const ProjectsSection = () => {
                   className="w-full h-auto rounded-lg shadow-md"
                 />
                 <p className="text-center mt-2 text-sm text-muted-foreground">AI Scanner Interface</p>
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious className="-left-4 md:-left-6" />
+            <CarouselNext className="-right-4 md:-right-6" />
+          </Carousel>
+        </div>
+      </div>
+
+      {/* Car Sales Website carousel */}
+      <div className="mt-16">
+        <SectionTitle
+          title="Car Sales Website Previews"
+          description="Screenshots from the Car Sales Website project showcasing different features."
+        />
+        <div className="mt-8">
+          <Carousel>
+            <CarouselContent>
+              <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
+                <img 
+                  src="/lovable-uploads/65d4144b-7bcd-4392-b4dc-01f53bd738da.png" 
+                  alt="Car Sales Homepage" 
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+                <p className="text-center mt-2 text-sm text-muted-foreground">Homepage - Find Your Best Car</p>
+              </CarouselItem>
+              <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
+                <img 
+                  src="/lovable-uploads/3b031d17-d9b7-4d14-9c3f-603ce0b594f0.png" 
+                  alt="Login Options" 
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+                <p className="text-center mt-2 text-sm text-muted-foreground">User Role Selection</p>
+              </CarouselItem>
+              <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
+                <img 
+                  src="/lovable-uploads/efae1470-4e95-4395-ad61-129a340c782f.png" 
+                  alt="Login Form" 
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+                <p className="text-center mt-2 text-sm text-muted-foreground">Sign In Form</p>
+              </CarouselItem>
+              <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
+                <img 
+                  src="/lovable-uploads/5b44d26a-2ac7-47d8-a2ce-0b4089f65896.png" 
+                  alt="OTP Verification" 
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+                <p className="text-center mt-2 text-sm text-muted-foreground">OTP Verification</p>
+              </CarouselItem>
+              <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
+                <img 
+                  src="/lovable-uploads/87c06e4b-329c-4c2d-afb3-c6987c8c517a.png" 
+                  alt="Admin Dashboard" 
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+                <p className="text-center mt-2 text-sm text-muted-foreground">Admin Dashboard</p>
+              </CarouselItem>
+              <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
+                <img 
+                  src="/lovable-uploads/0fc037c6-0d6f-426c-811a-ba8f95902e88.png" 
+                  alt="Contact Form" 
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+                <p className="text-center mt-2 text-sm text-muted-foreground">Contact Car Owner Form</p>
               </CarouselItem>
             </CarouselContent>
             <CarouselPrevious className="-left-4 md:-left-6" />
