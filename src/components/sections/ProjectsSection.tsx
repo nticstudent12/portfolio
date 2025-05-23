@@ -34,6 +34,17 @@ const ProjectsSection = () => {
       teamProject: true,
       githubUrl: "https://github.com/nihadben1/dawproject",
       liveUrl: "https://school-management-demo.vercel.app"
+    },{
+     
+      title: "Matchday App",
+      description: "A mobile application for football fans to track match schedules, player stats, and team news.",
+      image: "/lovable-uploads/Capture d'écran 2025-05-23 183929.png",
+      technologies: [ "React.js", "Tailwind CSS"],
+      year: 2025,
+      teamProject: false,
+      githubUrl: "https://github.com/nticstudent12/matchday-football-glance.git",
+      liveUrl: "https://matchday-football-glance.lovable.app/"
+    
     },
     {
       title: "Smart Todo List",
