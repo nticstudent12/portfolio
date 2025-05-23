@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import SectionTitle from "../SectionTitle";
 import { Github, ExternalLink, Eye } from "lucide-react";
@@ -82,6 +83,7 @@ const ProjectsSection = () => {
       year: 2024,
       teamProject: false,
       githubUrl: "https://github.com/nticstudent12/prayer-app",
+      liveUrl: "https://serene-ritual-router.lovable.app/"
     },
     {
       title: "Car Sales Website",
