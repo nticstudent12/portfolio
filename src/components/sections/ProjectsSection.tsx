@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import SectionTitle from "../SectionTitle";
 import { Github, ExternalLink, Eye } from "lucide-react";
@@ -28,7 +29,7 @@ const ProjectsSection = () => {
     {
       title: "School Management System",
       description: "A comprehensive system to manage student records, attendance, grades, and school resources. This team project was developed as part of my final year studies.",
-      image: "school-management",
+      image: "/lovable-uploads/2afb2774-f9fc-40df-b367-661b4e8ee850.png",
       technologies: ["Next.js", "React.js", "Tailwind CSS"],
       year: 2025,
       teamProject: true,
@@ -159,6 +160,32 @@ const ProjectsSection = () => {
             <CarouselNext className="relative static ml-2 translate-y-0" />
           </div>
         </Carousel>
+      </div>
+      
+      {/* School Management System features carousel */}
+      <div className="mt-16">
+        <SectionTitle
+          title="School Management System Features"
+          description="Comprehensive screenshots showcasing the full functionality of the School Management System."
+        />
+        <div className="mt-8">
+          <Carousel className="w-full">
+            <CarouselContent className="-ml-2 md:-ml-4">
+              <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg bg-gray-50">
+                  <img 
+                    src="/lovable-uploads/2afb2774-f9fc-40df-b367-661b4e8ee850.png" 
+                    alt="School Management Dashboard" 
+                    className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <p className="text-center mt-3 text-sm text-muted-foreground font-medium">Dashboard Overview</p>
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious className="-left-4 md:-left-6" />
+            <CarouselNext className="-right-4 md:-right-6" />
+          </Carousel>
+        </div>
       </div>
       
       {/* Healthcare project images carousel */}
