@@ -29,7 +29,7 @@ const ProjectsSection = () => {
     {
       title: "School Management System",
       description: "A comprehensive system to manage student records, attendance, grades, and school resources. This team project was developed as part of my final year studies.",
-      image: "/lovable-uploads/2afb2774-f9fc-40df-b367-661b4e8ee850.png",
+      image: "/lovable-uploads/7f0bc9ca-afad-4a70-97b6-614e64fbad65.png",
       technologies: ["Next.js", "React.js", "Tailwind CSS"],
       year: 2025,
       teamProject: true,
@@ -39,7 +39,7 @@ const ProjectsSection = () => {
      
       title: "Matchday App",
       description: "A mobile application for football fans to track match schedules, player stats, and team news.",
-      image: "/lovable-uploads/Capture d'écran 2025-05-23 183929.png",
+      image: "/lovable-uploads/28716785-1bfb-45e5-9e7c-2510dcef02f6.png",
       technologies: [ "React.js", "Tailwind CSS"],
       year: 2025,
       teamProject: false,
@@ -174,12 +174,52 @@ const ProjectsSection = () => {
               <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                 <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg bg-gray-50">
                   <img 
-                    src="/lovable-uploads/2afb2774-f9fc-40df-b367-661b4e8ee850.png" 
+                    src="/lovable-uploads/7f0bc9ca-afad-4a70-97b6-614e64fbad65.png" 
                     alt="School Management Dashboard" 
                     className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <p className="text-center mt-3 text-sm text-muted-foreground font-medium">Dashboard Overview</p>
+              </CarouselItem>
+              <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg bg-gray-50">
+                  <img 
+                    src="/lovable-uploads/f608f383-5503-46ba-ad03-72499d68bbd0.png" 
+                    alt="Class Schedule Management" 
+                    className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <p className="text-center mt-3 text-sm text-muted-foreground font-medium">Class Schedule (4A)</p>
+              </CarouselItem>
+              <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg bg-gray-50">
+                  <img 
+                    src="/lovable-uploads/5a384b41-82e6-42f1-b620-caeeb5672a71.png" 
+                    alt="Teachers Directory" 
+                    className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <p className="text-center mt-3 text-sm text-muted-foreground font-medium">All Teachers Directory</p>
+              </CarouselItem>
+              <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg bg-gray-50">
+                  <img 
+                    src="/lovable-uploads/e6ce5fde-f4eb-4257-b2d9-d2e162f033f4.png" 
+                    alt="Teacher Profile & Schedule" 
+                    className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <p className="text-center mt-3 text-sm text-muted-foreground font-medium">Teacher Profile & Performance</p>
+              </CarouselItem>
+              <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg bg-gray-50">
+                  <img 
+                    src="/lovable-uploads/66c88fd4-38e9-44e7-832f-fb65b122bae9.png" 
+                    alt="Create New Teacher Form" 
+                    className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <p className="text-center mt-3 text-sm text-muted-foreground font-medium">Create New Teacher</p>
               </CarouselItem>
             </CarouselContent>
             <CarouselPrevious className="-left-4 md:-left-6" />
