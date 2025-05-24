@@ -100,7 +100,7 @@ const ProjectsSection = () => {
     {
       title: "Car Sales Website",
       description: "A platform for buying and selling cars with search filters, user authentication, and messaging capabilities.",
-      image: "/lovable-uploads/65d4144b-7bcd-4392-b4dc-01f53bd738da.png",
+      image: "/lovable-uploads/6a5996bf-bdc4-482b-873b-61b78916d21e.png",
       technologies: ["HTML", "CSS", "JavaScript"],
       year: 2024,
       teamProject: false,
@@ -288,7 +288,7 @@ const ProjectsSection = () => {
               <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                 <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg bg-gray-50">
                   <img 
-                    src="/lovable-uploads/65d4144b-7bcd-4392-b4dc-01f53bd738da.png" 
+                    src="/lovable-uploads/6a5996bf-bdc4-482b-873b-61b78916d21e.png" 
                     alt="Car Sales Homepage" 
                     className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
                   />
