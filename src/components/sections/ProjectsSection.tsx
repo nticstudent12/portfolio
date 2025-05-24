@@ -232,7 +232,7 @@ const ProjectsSection = () => {
       <div className="mt-16">
         <SectionTitle
           title="Healthcare Platform Previews"
-          description="Screenshots from the Healthcare Platform project showcasing different features."
+          description="Screenshots from the Healthcare Platform project showcasing different features and admin functionalities."
         />
         <div className="mt-8">
           <Carousel>
@@ -268,6 +268,54 @@ const ProjectsSection = () => {
                   className="w-full h-auto rounded-lg shadow-md"
                 />
                 <p className="text-center mt-2 text-sm text-muted-foreground">AI Scanner Interface</p>
+              </CarouselItem>
+              <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
+                <img 
+                  src="/lovable-uploads/83a8d6b6-4773-4614-af74-3cfa9938e02c.png" 
+                  alt="Admin Coupons Management" 
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+                <p className="text-center mt-2 text-sm text-muted-foreground">Admin Coupons Management</p>
+              </CarouselItem>
+              <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
+                <img 
+                  src="/lovable-uploads/9f48485b-fbb1-4986-9901-7ea21ec1bc20.png" 
+                  alt="Admin Dashboard Overview" 
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+                <p className="text-center mt-2 text-sm text-muted-foreground">Admin Dashboard Overview</p>
+              </CarouselItem>
+              <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
+                <img 
+                  src="/lovable-uploads/eb164df4-3a07-4235-a06a-3552ccc2f14e.png" 
+                  alt="Appointment Confirmation" 
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+                <p className="text-center mt-2 text-sm text-muted-foreground">Appointment Confirmation</p>
+              </CarouselItem>
+              <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
+                <img 
+                  src="/lovable-uploads/17ca43de-9078-4aa0-9d59-65c98129dba8.png" 
+                  alt="Notifications System" 
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+                <p className="text-center mt-2 text-sm text-muted-foreground">Notifications System</p>
+              </CarouselItem>
+              <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
+                <img 
+                  src="/lovable-uploads/3047597d-1ad5-419f-a51e-2685f0116bff.png" 
+                  alt="Support Tickets" 
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+                <p className="text-center mt-2 text-sm text-muted-foreground">Support Tickets</p>
+              </CarouselItem>
+              <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
+                <img 
+                  src="/lovable-uploads/706ae9f0-cba9-4f47-b7d8-a7adfa17d199.png" 
+                  alt="Medical History" 
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+                <p className="text-center mt-2 text-sm text-muted-foreground">Medical History</p>
               </CarouselItem>
             </CarouselContent>
             <CarouselPrevious className="-left-4 md:-left-6" />
