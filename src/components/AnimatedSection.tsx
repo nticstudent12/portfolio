@@ -26,7 +26,7 @@ const AnimatedSection = ({
 
   return (
     <div
-      ref={ref}
+      ref={ref as React.RefObject<HTMLDivElement>}
       className={`transition-all duration-700 ease-out ${animationClasses[animation]} ${className}`}
       style={{ animationDelay: `${delay}ms` }}
     >

@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import SectionTitle from "../SectionTitle";
 import { Github, ExternalLink, Eye } from "lucide-react";
@@ -342,16 +341,6 @@ const ProjectsSection = () => {
                   />
                 </div>
                 <p className="text-center mt-3 text-sm text-muted-foreground font-medium">Homepage - Find Your Best Car</p>
-              </CarouselItem>
-              <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
-                <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg bg-gray-50">
-                  <img 
-                    src="/lovable-uploads/3b031d17-d9b7-4d14-9c3f-603ce0b594f0.png" 
-                    alt="Login Options" 
-                    className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <p className="text-center mt-3 text-sm text-muted-foreground font-medium">User Role Selection</p>
               </CarouselItem>
               <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                 <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-lg bg-gray-50">
