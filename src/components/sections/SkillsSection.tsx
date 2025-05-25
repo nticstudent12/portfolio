@@ -1,6 +1,6 @@
+
 import { useState } from "react";
 import SectionTitle from "../SectionTitle";
-import AnimatedSection from "../AnimatedSection";
 import { Code, Users } from "lucide-react";
 
 type SkillCategory = "technical" | "soft";
@@ -33,79 +33,71 @@ const SkillsSection = () => {
   
   return (
     <section id="skills" className="section-container">
-      <AnimatedSection>
-        <SectionTitle
-          title="My Skills"
-          description="The technologies I work with and the skills I've developed."
-        />
-      </AnimatedSection>
+      <SectionTitle
+        title="My Skills"
+        description="The technologies I work with and the skills I've developed."
+      />
       
-      <AnimatedSection delay={200}>
-        <div className="flex justify-center mb-12">
-          <div className="inline-flex bg-secondary rounded-lg p-1">
-            {categories.map((category) => (
-              <button
-                key={category.id}
-                onClick={() => setActiveCategory(category.id as SkillCategory)}
-                className={`flex items-center gap-2 px-4 py-2 rounded-md transition-colors ${
-                  activeCategory === category.id
-                    ? "bg-portfolio-blue-light text-white"
-                    : "text-foreground hover:bg-secondary/80"
-                }`}
-              >
-                <category.icon className="w-4 h-4" />
-                <span>{category.label}</span>
-              </button>
-            ))}
-          </div>
+      <div className="flex justify-center mb-12">
+        <div className="inline-flex bg-secondary rounded-lg p-1">
+          {categories.map((category) => (
+            <button
+              key={category.id}
+              onClick={() => setActiveCategory(category.id as SkillCategory)}
+              className={`flex items-center gap-2 px-4 py-2 rounded-md transition-colors ${
+                activeCategory === category.id
+                  ? "bg-portfolio-blue-light text-white"
+                  : "text-foreground hover:bg-secondary/80"
+              }`}
+            >
+              <category.icon className="w-4 h-4" />
+              <span>{category.label}</span>
+            </button>
+          ))}
         </div>
-      </AnimatedSection>
+      </div>
       
       <div className="grid md:grid-cols-2 gap-12">
-        <AnimatedSection animation="fade-left" delay={400}>
-          <div className="space-y-8">
-            {(activeCategory === "technical" ? technicalSkills : softSkills).map((skill, index) => (
-              <div key={skill.name} className="space-y-2" style={{ animationDelay: `${600 + index * 100}ms` }}>
-                <div className="flex justify-between">
-                  <span className="font-medium">{skill.name}</span>
-                  <span>{skill.level}%</span>
-                </div>
-                <div className="h-2.5 bg-secondary rounded-full overflow-hidden">
-                  <div 
-                    className="h-full bg-portfolio-blue-light rounded-full transition-all duration-1000" 
-                    style={{ width: `${skill.level}%` }} 
-                  />
-                </div>
+        <div className="space-y-8">
+          {(activeCategory === "technical" ? technicalSkills : softSkills).map((skill, index) => (
+            <div key={skill.name} className="space-y-2">
+              <div className="flex justify-between">
+                <span className="font-medium">{skill.name}</span>
+                <span>{skill.level}%</span>
               </div>
-            ))}
-          </div>
-        </AnimatedSection>
+              <div className="h-2.5 bg-secondary rounded-full overflow-hidden">
+                <div 
+                  className="h-full bg-portfolio-blue-light rounded-full transition-all duration-1000" 
+                  style={{ width: `${skill.level}%` }} 
+                />
+              </div>
+            </div>
+          ))}
+        </div>
         
-        <AnimatedSection animation="fade-right" delay={600}>
-          <div className="bg-secondary/50 dark:bg-secondary/20 rounded-lg p-8 flex flex-col justify-center">
-            {activeCategory === "technical" ? (
-              <>
-                <h3 className="text-xl font-semibold mb-4">Technical Expertise</h3>
-                <p className="mb-6">
-                  I specialize in modern web development technologies, with a focus on React.js and Next.js ecosystems. My foundation in HTML, CSS, and JavaScript allows me to create responsive, accessible, and performant web applications.
-                </p>
-                <p>
-                  Tailwind CSS has become my preferred styling solution due to its utility-first approach and the speed at which I can create beautiful interfaces with consistent design systems.
-                </p>
-              </>
-            ) : (
-              <>
-                <h3 className="text-xl font-semibold mb-4">Interpersonal Strengths</h3>
-                <p className="mb-6">
-                  Beyond technical abilities, I've developed strong project management and leadership skills through various team projects. I excel in collaborative environments where effective communication is essential.
-                </p>
-                <p>
-                  My background in public relations has enhanced my ability to present ideas clearly and engage with stakeholders. I approach problems with critical thinking to find optimal solutions.
-                </p>
-              </>
-            )}
-          </div>
-        </AnimatedSection>
+        <div className="bg-secondary/50 dark:bg-secondary/20 rounded-lg p-8 flex flex-col justify-center">
+          {activeCategory === "technical" ? (
+            <>
+              <h3 className="text-xl font-semibold mb-4">Technical Expertise</h3>
+              <p className="mb-6">
+                I specialize in modern web development technologies, with a focus on React.js and Next.js ecosystems. My foundation in HTML, CSS, and JavaScript allows me to create responsive, accessible, and performant web applications.
+              </p>
+              <p>
+                Tailwind CSS has become my preferred styling solution due to its utility-first approach and the speed at which I can create beautiful interfaces with consistent design systems.
+              </p>
+            </>
+          ) : (
+            <>
+              <h3 className="text-xl font-semibold mb-4">Interpersonal Strengths</h3>
+              <p className="mb-6">
+                Beyond technical abilities, I've developed strong project management and leadership skills through various team projects. I excel in collaborative environments where effective communication is essential.
+              </p>
+              <p>
+                My background in public relations has enhanced my ability to present ideas clearly and engage with stakeholders. I approach problems with critical thinking to find optimal solutions.
+              </p>
+            </>
+          )}
+        </div>
       </div>
     </section>
   );
