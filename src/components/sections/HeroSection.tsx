@@ -2,6 +2,7 @@
 import { ArrowDown } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "../ui/avatar";
 import TypingEffect from "../TypingEffect";
+import heroPortrait from "@/assets/hero-portrait.jpg";
 
 const HeroSection = () => {
   return (
@@ -45,7 +46,7 @@ const HeroSection = () => {
         <div className="order-first md:order-last hidden md:flex justify-center animate-fade-in-right">
           <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-2 border-portfolio-blue-light/30 hover:border-portfolio-blue-light/60 transition-all duration-500 hover:scale-105 transform hover:shadow-2xl">
             <img 
-              src="/lovable-uploads/2afb2774-f9fc-40df-b367-661b4e8ee850.png" 
+              src={heroPortrait} 
               alt="Abdel Djalil BOUCHAREF" 
               className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
             />
